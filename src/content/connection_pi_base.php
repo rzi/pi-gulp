@@ -21,7 +21,7 @@ function connection_pi_base() {
     //or die('<br>Błąd wyboru bazy danych.');
 	//echo '<br><BR>Poprawne połączenie z bazą danych<BR>';
 global $link;
-	$link = mysqli_connect("www.pi.cba.pl", "Bazapi2019", "Bazapi2019", "elunch");
+	$link = mysqli_connect("www.mkwk019.cba.pl", "Bazapi2019", "Bazapi2019", "elunch");
 
 if (!$link) {
     echo "Error: Unable to connect to MySQL." . PHP_EOL;
