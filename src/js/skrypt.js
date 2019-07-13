@@ -97,8 +97,8 @@ $(document).ready(function () {
         $.each(response1, function (key, data1) {
           data2=chart.data.datasets[0].data[i] =data1;
           label3 = fnTimeConv(key);
-//          console.log(label3);
-//          console.log(data2);
+         console.log(label3);
+          console.log(data2);
           chart.data.labels[i]=label3;
           i=i+1;
         })
