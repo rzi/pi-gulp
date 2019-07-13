@@ -1,6 +1,3 @@
-"use strict";
-
-console.log(`Hello world! assssssssssssssssssss`);
 $(document).ready(function () {
     var ctx = document.getElementById('myChart').getContext('2d');
     var chart = new Chart(ctx, {
