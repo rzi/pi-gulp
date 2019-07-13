@@ -158,4 +158,4 @@ $(document).ready(function () {
       return convdataTime;
     }
   
-  }); /*Klamra zamykająca $(document).ready(function(){*/
+}); /*Klamra zamykająca $(document).ready(function(){*/
