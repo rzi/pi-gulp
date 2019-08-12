@@ -72,9 +72,14 @@ gulp.task("sass", () => {
     .pipe(browserSync.stream());
 });
 
+gulp.task('php', function () {
+  return gulp.src('src/content/*.php')
+      .pipe(gulp.dest('./dist'));
+});
+
 gulp.task(
   "serve",
-  gulp.series("sass", "html", "js", "assets", function() {
+  gulp.series("sass", "html", "js", "assets","php", function() {
     browserSync.init({
       server: "./dist",
       open: true // set to false to disable browser autostart
